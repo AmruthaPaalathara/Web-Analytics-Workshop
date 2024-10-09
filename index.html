@@ -293,14 +293,30 @@ gtag('39;config', G-TLJ2XLGH3S;);
 
 </html>
 
-<div>Order your items here</div>
-<button> View Items</button>
-<script>
-    gtag("event", "view_item", {
-      currency: "USD",
-      value: 30.03,
-      items: [
-        {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-33XZ15DKHM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-33XZ15DKHM');
+    </script>
+</head>
+<body>
+    <div>Order your items here</div>
+    <button> View Items</button>
+    <script>
+  gtag("event", "view_item_list", {
+  item_list_id: "related_products",
+  item_list_name: "Related products",
+  items: [
+        // If someone purchases more than one item,
+        // you can add those items to the items array
+         {
           item_id: "SKU_12345",
           item_name: "Stan and Friends Tee",
           affiliation: "Google Merchandise Store",
@@ -319,7 +335,7 @@ gtag('39;config', G-TLJ2XLGH3S;);
           location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
           price: 10.01,
           quantity: 3
-        }
-      ]
+        }]
     });
-</script>
+    </script>
+</body>
