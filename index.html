@@ -353,14 +353,36 @@ gtag('39;config', G-TLJ2XLGH3S;);
         gtag('config', 'G-G-33XZ15DKHM"></');
     </script>
 </head>
-<body>
-    <div>Order your items here</div>
-    <button> Purchase</button>
+<!--
+  Note: In the following code sample, make sure to
+  replace "TAG_ID" with your tag ID.
+  Learn more: https://support.google.com/tagmanager/answer/12326985
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
     <script>
-  gtag("event", "purchase", {
-  item_list_id: "related_products",
-  item_list_name: "Related products",
-  items: [
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'TAG_ID');
+    </script>
+</head>
+<body>
+    <div>This is where the purchase form would go</div>
+    <button>Submit</button>
+    <script>
+    gtag("event", "purchase", {
+        transaction_id: "T_12345_1",
+        value: 30.03,
+        tax: 4.90,
+        shipping: 5.99,
+        currency: "USD",
+        coupon: "SUMMER_SALE",
+        items: [
         // If someone purchases more than one item,
         // you can add those items to the items array
          {
@@ -386,4 +408,4 @@ gtag('39;config', G-TLJ2XLGH3S;);
     });
     </script>
 </body>
-
+</html>
