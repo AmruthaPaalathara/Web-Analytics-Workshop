@@ -1,6 +1,16 @@
 <html lang="en">
 
 <head>
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N8KMLJLF');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +25,12 @@
 </head>
 
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8KMLJLF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <nav id="nav">
         <div class="navTop">
             <div class="navItem">
@@ -257,12 +273,96 @@
                     <img src="whatsapp.png" alt="" class="fIcon">
                 </div>
             </div>
+            <div>This is where the purchase form would go</div>
+            <button>Submit</button>
+
+             <div>Order your items here</div>
+                <button> View Items</button>
             <div class="footerRightMenu">
                 <span class="copyright">@Dr. Dalwin . All rights reserved. 2022.</span>
             </div>
         </div>
     </footer>
     <script src="./app.js"></script>
-</body>
 
+
+
+
+   
+
+
+   
+    <script>
+  gtag("event", "view_item_list", {
+  item_list_id: "related_products",
+  item_list_name: "Related products",
+  items: [
+        // If someone purchases more than one item,
+        // you can add those items to the items array
+         {
+          item_id: "SKU_12345",
+          item_name: "Stan and Friends Tee",
+          affiliation: "Google Merchandise Store",
+          coupon: "SUMMER_FUN",
+          discount: 2.22,
+          index: 0,
+          item_brand: "Google",
+          item_category: "Apparel",
+          item_category2: "Adult",
+          item_category3: "Shirts",
+          item_category4: "Crew",
+          item_category5: "Short sleeve",
+          item_list_id: "related_products",
+          item_list_name: "Related Products",
+          item_variant: "green",
+          location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+          price: 10.01,
+          quantity: 3
+        }]
+    });
+    </script>
+
+
+
+<!--
+  Note: In the following code sample, make sure to
+  replace "TAG_ID" with your tag ID.
+  Learn more: https://support.google.com/tagmanager/answer/12326985
+-->
+
+    
+    <script>
+    gtag("event", "purchase", {
+        transaction_id: "T_12345_1",
+        value: 30.03,
+        tax: 4.90,
+        shipping: 5.99,
+        currency: "USD",
+        coupon: "SUMMER_SALE",
+        items: [
+        // If someone purchases more than one item,
+        // you can add those items to the items array
+         {
+          item_id: "SKU_12345",
+          item_name: "Stan and Friends Tee",
+          affiliation: "Google Merchandise Store",
+          coupon: "SUMMER_FUN",
+          discount: 2.22,
+          index: 0,
+          item_brand: "Google",
+          item_category: "Apparel",
+          item_category2: "Adult",
+          item_category3: "Shirts",
+          item_category4: "Crew",
+          item_category5: "Short sleeve",
+          item_list_id: "related_products",
+          item_list_name: "Related Products",
+          item_variant: "green",
+          location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+          price: 10.01,
+          quantity: 3
+        }]
+    });
+    </script>
+</body>
 </html>
